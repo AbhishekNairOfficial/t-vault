@@ -184,7 +184,6 @@ const ButtonWrap = styled.div`
 
 const SignUp = styled.a`
   background-color: #fff;
-  margin-left: 1rem;
   text-decoration: none;
   font-size: 1.4rem;
   color: #e20074;
@@ -566,8 +565,14 @@ const LoginPage = () => {
                     {Strings.Resources.tvaultDescription}
                   </Description>
                   <ButtonWrap>
+                  <ButtonComponent
+                      label="NPE Login"
+                      color="secondary"
+                      onClick={() => onDashboardClicked()}
+                      width={isMobileScreen ? '100%' : ''}
+                    />
                     <ButtonComponent
-                      label="Go to Dashboard"
+                      label="PROD Login"
                       color="secondary"
                       onClick={() => onDashboardClicked()}
                       width={isMobileScreen ? '100%' : ''}

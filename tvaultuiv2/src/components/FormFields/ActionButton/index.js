@@ -16,6 +16,7 @@ const styles = (props) => ({
     height: '3.6rem',
     boxShadow: 'none',
     fontSize: '1.4rem',
+    marginRight: '1rem',
     width: props.width,
     [theme.breakpoints.down('xs')]: {
       height: '4.5rem',
